@@ -19,9 +19,9 @@ public class MFactura {
    private String idcliente;
    @Column(nullable = false)
    private Boolean activc;
-
+    /*
    // Relaciones entre tablas factura y clientes
-  /*  @ManyToOne
+    @ManyToOne
     @JoinColumn(name = "pkfactura",referencedColumnName = "idcliente")
     @JsonBackReference
     private MCliente cliente;
@@ -29,7 +29,9 @@ public class MFactura {
     // Relaciones entre tablas factura y vehiculofactura
     @OneToMany(mappedBy = "factura")
     @JsonManagedReference
-    private List<MVehiculoFactura> vehiculoFacturas; */
+    private List<MVehiculoFactura> vehiculoFacturas;
+
+     */
 
     // Constructores
     public MFactura(Integer codfactura, LocalDate fecha, String idcliente, Boolean activc) {

@@ -20,11 +20,14 @@ public class MCliente {
     private String telcliente;
     @Column(nullable = false)
     private Boolean activo;
-
+    /*
     // Relaciones entre tablas cliente y facturas
-/*    @OneToMany(mappedBy = "cliente")
+   @OneToMany(mappedBy = "cliente")
     @JsonManagedReference
-    private List<MFactura> facturas;*/
+    private List<MFactura> facturas;
+
+     */
+
 
     // Constructores
     public MCliente(String idcliente, String nomcliente, String dircliente, String telcliente, Boolean activo) {

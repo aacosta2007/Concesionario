@@ -19,11 +19,13 @@ public class MVehiculo {
     private Integer valor;
     @Column(nullable = false)
     private Boolean activo;
-
+    /*
     // Relaciones entre tablas vehiculo y vehiculofactura
-  /*  @OneToMany(mappedBy = "vehiculo")
+    @OneToMany(mappedBy = "vehiculo")
     @JsonManagedReference
-    private List<MVehiculoFactura> vehiculoFacturas; */
+    private List<MVehiculoFactura> vehiculoFacturas;
+
+     */
 
     // Constructores
     public MVehiculo(String placa, String marca, String modelo, Integer valor, Boolean activo) {

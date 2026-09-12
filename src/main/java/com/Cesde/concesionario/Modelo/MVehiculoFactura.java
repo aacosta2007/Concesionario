@@ -17,8 +17,8 @@ public class MVehiculoFactura {
     @Column(nullable = false)
     private Integer valventa;
 
-    // Relaciones entre tablas vehiculofactura y vehiculo
-   /* @ManyToOne
+    /* // Relaciones entre tablas vehiculofactura y vehiculo
+    @ManyToOne
     @JoinColumn(name = "pkvehiculo",referencedColumnName = "placa")
     @JsonBackReference
     private MVehiculo vehiculo;
@@ -26,7 +26,9 @@ public class MVehiculoFactura {
     // Relacion entre tablas vehiculofactura y factura
     @ManyToOne
     @JoinColumn(name = "pkdetalle",referencedColumnName = "codfactura")
-    private MFactura factura; */
+    private MFactura factura;*/
+
+
 
     // Constructores
     public MVehiculoFactura(Integer consecutivo, Integer codfactura, String placa, Integer valventa) {
